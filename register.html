@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1 id="business">Foodar</h1>
+        <hr />
+        <div id="instruct">
+            <h2>Register</h2>
+            <p>Please fill out the form below:</p>
+            <hr />
+        </div>
+
+        <div id="formData">
+            <form class="left" method="POST">
+                <fieldset>
+                    <legend>Details:</legend>
+                    <label>Email:</label>
+                    <input type="email" name="email" required><br/>
+                    <br/>
+
+                    <label>Password:</label>
+                    <input type="password" name="pass" required><br/>
+                    <br/>
+
+                    <label>First Name:</label>
+                    <input type="text" name="firstName" required><br/>
+                    <br/>
+
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName" required><br/>
+                    <br/>
+                </fieldset>
+            </form>
+
+            <form class="right" method="POST">
+                <fieldset>
+                    <legend>Address:</legend>
+                    <label>State:</label>
+                    <input type="text" name="state" required><br/>
+                    <br/>
+
+                    <label>Street:</label>
+                    <input type="text" name="street" required><br/>
+                    <br/>
+
+                    <label>City:</label>
+                    <input type="text" name="city" required><br/>
+                    <br/>
+
+                    <label>Zipcode:</label>
+                    <input type="number" name="zip" required><br/>
+                    <br/>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="submission" style="height:38%">
+            <form method="POST">
+                <button>Register</button>
+            </form>
+        </div>
+        <hr/>
+        
+        <footer>
+            <div style="float:left; width:80%;">
+                <nav>
+                    <a href="index.html">Home</a><br/>
+                    <a href="register.html">Register</a><br/>
+                    <a href="about.html">How it all works</a>
+                </nav>
+            </div>
+            <div style="float:right; width:20%">
+                <p id="copy">
+                    &copy; 2015. All rights reserved<br/>
+                    <a href="home.html">Home</a><br/>
+                    <a href="priv.html">Privacy Policy</a><br/>
+                    <a href="terms.html">Terms and Conditions</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
