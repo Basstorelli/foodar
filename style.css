@@ -4,13 +4,13 @@ body, html{
     height: 100%;
 }
 
-#business{
+.business{
     color: rgb(67, 192, 67);
     padding-left: 50%;
     box-sizing: border-box; /*prevents spilling*/
 }
 
-h3, p, div, nav{
+h1, h3, p, div, nav, label{
     font-family: sans-serif;
 }
 
@@ -32,6 +32,11 @@ input{
     padding: 5px;
 }
 
+.request{
+    padding: 4px;
+    width: 200px;
+}
+
 
 footer{
     position: absolute;
@@ -39,9 +44,26 @@ footer{
     bottom: 0;
 }
 
-.banner{
+#maintitle{
+    float:right;
     font-family: sans-serif;
     text-align: center;
+    width:40%;
+}
+
+#banner{
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 85%;
+    display: none;
+}
+
+#banner2{
+    position: fixed;
+    top: 0;
+    left: 80%;
+    display: none;
 }
 
 #formData{
@@ -84,3 +106,20 @@ footer{
     
 }
 
+.col-1 {flex-basis: 8.33%;} /* width works too */
+.col-2 {flex-basis: 16.66%;}
+.col-3 {flex-basis: 25%;}
+.col-4 {flex-basis: 33.33%;}
+.col-5 {flex-basis: 41.66%;}
+.col-6 {flex-basis: 50%;}
+.col-7 {flex-basis: 58.33%;}
+.col-8 {flex-basis: 66.66%;}
+.col-9 {flex-basis: 75%;}
+.col-10 {flex-basis: 83.33%;}
+.col-11 {flex-basis: 91.66%;}
+.col-12 {flex-basis: 100%;}
+
+.row{
+    display: flex;
+    flex-direction:row;
+}
