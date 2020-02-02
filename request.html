@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request Your Order</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="requestCalc.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Submit Your Request</h1>
+        <h3>Please fill out the form below:</h3>
+        <hr/>
+        <br/>
+
+        <form id="request form">
+            <label>Enter your e-mail:</label><br/>
+            <input class="request" type="email" name="email" required>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <label>Choose your style:</label><br/><br/><br/><br/>
+            <div class="row">
+                <div class="col-3" style="border-style:solid">
+                    <p style="text-align: center; font-style:italic">Classic</p><br/>
+                    <p style="text-align: center;">This is a classic treatment.</p>
+                    <input style="float: left; width: 95%;"type="radio" name="type">
+                </div>
+                <div class="col-3" style="border-style:solid">
+                    <p style="text-align: center; font-style:italic">Premium</p><br/>
+                    <p style="text-align: center;">Pinky's up</p>
+                    <input style="float: left; width: 95%;"type="radio" name="type">
+                </div>
+                <div class="col-3" style="border-style:solid">
+                    <p style="text-align: center; font-style:italic">Royal</p><br/>
+                    <p style="text-align: center;">Food served on a silver platter.</p>
+                    <input style="float: left; width: 95%;"type="radio" name="type">
+                </div>
+            </div>
+            <br/><br/><br/><br/><br/>
+
+            <label>Restaurant Name:</label><br/>
+            <input class="request" type="text" name="restaurant" required>
+            <br/><br/><br/><br/><br/>
+
+            <label>Tip:</label><br/><br/><br/><br/>
+            <div class="row">
+                <div class="col-3" style="border-style:solid">
+                    <p style="text-align: center; font-style:italic">10%</p><br/>
+                    <p style="text-align: center;">They did their job.</p>
+                    <input style="float: left; width: 95%;"type="radio" name="tip">
+                </div>
+                <div class="col-3" style="border-style:solid">
+                    <p style="text-align: center; font-style:italic">15%</p><br/>
+                    <p style="text-align: center;">They made you feel special.</p>
+                    <input style="float: left; width: 95%;"type="radio" name="tip">
+                </div>
+                <div class="col-3" style="border-style:solid">
+                    <p style="text-align: center; font-style:italic">20%</p><br/>
+                    <p style="text-align: center;">I wanna give them more!</p>
+                    <input style="float: left; width: 95%;"type="radio" name="tip">
+                </div>
+            </div>
+            <br/><br/><br/>
+            <div class="row">
+                <div class="col-12">
+                    <input id="req" type="submit" value="Request">
+                    <h2 id="total"></h2>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
