@@ -1,9 +1,13 @@
-function zipCheck(zip){
+
+
+document.getElementById("zipcheck").addEventListener("click", zipCheck);
+function zipCheck(){
+    var zip = document.getElementById("zipinput").value;
     if (zip > 20000){
-        return true;
+        document.getElementById("zipresponse").innerHTML="Sorry, we are unable to reach that area.";
     }
     else{
-        return false;
+        document.getElementById("zipresponse").innerHTML="You are within range of Foodar services!";
     }
 }
 
@@ -23,7 +27,3 @@ document.getElementById("banner2").onclick = function(){
     btn.style.display="none";
     ban.style.display="none";
 }
-/*var inputVal = document.getElementById("zipper").value;
-console.log("v: " + inputVal);
-
-console.log(zipCheck(inputVal));*/
