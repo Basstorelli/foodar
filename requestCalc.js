@@ -23,5 +23,6 @@ function calc(){
             else total = (total*1.20);
         }
     }
+    total = total.toFixed(2);
     document.getElementById("total").innerHTML = "Total: $" + total;
 }
